@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div.Menybox{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+div.Meny{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 130px;
+  background-color: #d9ab73;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+div.Links{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 300px;
+  font-size: 40pt;
+  font-family: impact;
+  /*border: 1px solid blue;*/
+  margin: 40px;
+  user-select: none;
+}
+div.Hembtn, .Menybtn{
+  text-align: center;
+  /*border: 1px solid crimson;*/
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #f2dfbb;
+  color: #732407;
+  box-shadow: inset 0px -10px 9px -10px black, 0px 5px 20px -5px black;
+  cursor: pointer;
+}
+div.Bakgrund{
+  display: flex;
+  position: fixed;
+  flex-wrap: nowrap;
+  z-index: -1;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+div.Bakgrund > img{
+  filter: blur(6px);
+}
+div.Menydropdown{
+  display: none;
+  width: 100%;
+  height: 100px;
+  background-color: #f2dfbb;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+@media only screen and (min-aspect-ratio: 16/9) {
+  div.Bakgrund > img{
+    object-fit: contain;
+    object-position: center;
+    max-width: 100vw;
+  }
+}
+@media not screen and (min-aspect-ratio: 16/9) {
+  div.Bakgrund > img{
+    object-fit: contain;
+    object-position: center;
+    height: 100vh;
+  }
+}
