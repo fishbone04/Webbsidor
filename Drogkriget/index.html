@@ -11,17 +11,18 @@
 
     <title>Drogkriget i Mexiko</title>
   </head>
-  <body>
+  <body onresize="menycontent()">
     <div class="Bakgrund">
       <img src="bilder/Bakgrund.png" alt="bakgrund">
     </div>
 
     <div class="Menybox">
       <div id="meny" class="Meny">
-        <div class="Links">
+        <div id="links" class="Links">
           <div id="hembutton" onclick="hem()" onmousedown="buttondown(this.id)" onmouseup="buttonup(this.id)" class="Hembtn">HEM</div>
           <div id="menybutton" onclick="meny()" onmousedown="buttondown(this.id)" onmouseup="buttonup(this.id)" class="Menybtn">MENY</div>
         </div>
+        <div id="titel" class="Titel">Drogkriget i Mexiko</div>
       </div>
       <div id="Menydrop" class="Menydropdown">
         <div class="Menydropdownlinks">

@@ -16,12 +16,14 @@ div.Meny{
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 130px;
+  min-height: 130px;
   background-color: #d9ab73;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
+  flex-wrap: wrap-reverse;
+
 }
 div.Links{
   display: flex;
@@ -31,7 +33,19 @@ div.Links{
   font-size: 40pt;
   font-family: impact;
   /*border: 1px solid blue;*/
-  margin: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  user-select: none;
+}
+div.Titel{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-size: 60pt;
+  font-family: impact;
+  margin-left: 40px;
+  margin-right: 40px;
   user-select: none;
 }
 div.Hembtn, .Menybtn{
@@ -43,6 +57,14 @@ div.Hembtn, .Menybtn{
   color: #732407;
   box-shadow: inset 0px -10px 9px -10px black, 0px 5px 20px -5px black;
   cursor: pointer;
+}
+div.Menydropdown{
+  display: none;
+  width: 100%;
+  height: 100px;
+  background-color: #f2dfbb;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 div.Bakgrund{
   display: flex;
@@ -56,26 +78,16 @@ div.Bakgrund{
 }
 div.Bakgrund > img{
   filter: blur(6px);
-}
-div.Menydropdown{
-  display: none;
-  width: 100%;
-  height: 100px;
-  background-color: #f2dfbb;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+  object-fit: contain;
+  object-position: center;
 }
 @media only screen and (min-aspect-ratio: 16/9) {
   div.Bakgrund > img{
-    object-fit: contain;
-    object-position: center;
-    max-width: 100vw;
+    width: 100vw;
   }
 }
-@media not screen and (min-aspect-ratio: 16/9) {
+@media only screen and (max-aspect-ratio: 16/9) {
   div.Bakgrund > img{
-    object-fit: contain;
-    object-position: center;
     height: 100vh;
   }
 }
