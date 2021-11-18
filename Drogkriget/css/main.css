@@ -23,7 +23,7 @@ div.Meny{
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   flex-wrap: wrap-reverse;
-
+  align-content: center;
 }
 div.Links{
   display: flex;
@@ -36,6 +36,7 @@ div.Links{
   margin-left: 40px;
   margin-right: 40px;
   user-select: none;
+  align-items: center;
 }
 div.Titel{
   display: flex;
@@ -47,14 +48,20 @@ div.Titel{
   margin-left: 40px;
   margin-right: 40px;
   user-select: none;
+  -webkit-text-stroke: 1px white;
+}
+div.Menybtn > img{
+  width: 80px;
 }
 div.Hembtn, .Menybtn{
+  display: flex;
   text-align: center;
   border: 1px solid black;
   padding: 5px;
   border-radius: 4px;
-  background-color: #f2dfbb;
+  background-color: #d9ab73/*#f2dfbb*/;
   color: #732407;
+  align-content: center;
   /*box-shadow: inset 0px -10px 9px -10px black, 0px 5px 20px -5px black;*/
   cursor: pointer;
 }
