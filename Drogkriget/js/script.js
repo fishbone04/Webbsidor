@@ -1,9 +1,13 @@
 function buttondown(buttonid) {
-  document.getElementById(buttonid).style.boxShadow="inset 0px 10px 9px -10px black, 0px 5px 15px -5px black";
+  /*document.getElementById(buttonid).style.boxShadow="inset 0px 10px 9px -10px black, 0px 5px 15px -5px black";*/
+  document.getElementById(buttonid).style.backgroundColor="#b28c5e";
+  document.getElementById(buttonid).style.color="#4d1805";
 }
 /*inset 0px -10px 6px -10px black*/
 function buttonup(buttonid) {
-document.getElementById(buttonid).style.boxShadow="inset 0px -10px 9px -10px black, 0px 5px 20px -5px black";
+/*document.getElementById(buttonid).style.boxShadow="inset 0px -10px 9px -10px black, 0px 5px 20px -5px black";*/
+document.getElementById(buttonid).style.backgroundColor="#f2dfbb";
+document.getElementById(buttonid).style.color="#732407";
 }
 function meny() {
   var menydropdown = document.getElementById("Menydrop");
@@ -35,7 +39,7 @@ document.getElementById("demo").innerHTML = menyheight + " " + menywidth + " " +
   if (menyheight > 130) {
     meny.style.justifyContent="center";
   }
-  else if ((menyheight == 130)&&(menywidth > 180) ) {
+  else if ( (menyheight == 130)&&(menywidth > 180) ) {
     meny.style.justifyContent="space-between";
   }
   if (menywidth <= 380) {

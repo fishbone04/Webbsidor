@@ -50,12 +50,12 @@ div.Titel{
 }
 div.Hembtn, .Menybtn{
   text-align: center;
-  /*border: 1px solid crimson;*/
+  border: 1px solid black;
   padding: 5px;
   border-radius: 4px;
   background-color: #f2dfbb;
   color: #732407;
-  box-shadow: inset 0px -10px 9px -10px black, 0px 5px 20px -5px black;
+  /*box-shadow: inset 0px -10px 9px -10px black, 0px 5px 20px -5px black;*/
   cursor: pointer;
 }
 div.Menydropdown{
