@@ -16,14 +16,14 @@ function meny() {
   if (menydropDisplay == "none") {
     document.getElementById("Menydrop").style.display="flex";
     document.getElementById("meny").style.borderBottomLeftRadius="0px";
-    document.getElementById("meny").style.borderBottomRightRadius="0px";
     menyimage.src = "bilder/menu2.svg";
+    menyimage.style.width = "50px";
   }
   else {
     document.getElementById("Menydrop").style.display="none";
     document.getElementById("meny").style.borderBottomLeftRadius="6px";
-    document.getElementById("meny").style.borderBottomRightRadius="6px";
     menyimage.src = "bilder/menu.svg";
+    menyimage.style.width = "60px";
   }
 }
 function menycontent() {
