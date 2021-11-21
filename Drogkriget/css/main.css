@@ -35,7 +35,7 @@ div.Links{
   display: flex;
   justify-content: space-between;
   align-content: center;
-  width: 300px;
+  width: 200px;
   font-size: 40pt;
   font-family: impact;
   /*border: 1px solid blue;*/
@@ -49,14 +49,13 @@ div.Titel{
   justify-content: center;
   align-content: center;
   text-align: center;
-  font-size: 60pt;
+  font-size: 35pt;
   font-family: impact;
   margin-left: 40px;
   margin-right: 40px;
   user-select: none;
-  -webkit-text-stroke: 1px white;
 }
-div.Menybtn > img{
+div.Menybtn > img, div.Hembtn > img{
   width: 60px;
 }
 div.Hembtn, .Menybtn{
@@ -103,4 +102,41 @@ div.Bakgrund > img{
   div.Bakgrund > img{
     height: 100vh;
   }
+}
+/*div.Menydropdownlinks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+div.Menydropdownlinks > ol{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: impact;
+  text-align: center;
+  align-items: center;
+}
+div.Menydropdownlinks > ol > li::marker{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: flex-start;
+  padding-left: 1px;
+}*/
+div.dropdownbox{
+  position: absolute;
+  z-index: 2;
+}
+div.Menydropdownlinks{
+  display: flex;
+  text-align: center;
+  font-family: impact;
+}
+div.Menydropdownlinks > h2{
+  padding: 10px;
+}
+div.Menydropdownlinks > strong > div {
+  padding-left: 30px;
+  padding-right: 30px;
 }
