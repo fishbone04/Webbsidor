@@ -1,0 +1,20 @@
+div.bodybox{
+  background-color: lightgrey;
+  min-height: 100vh;
+  margin: 20px;
+  border-radius: 6px;
+}
+div.content{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+div.text{
+  margin-top: 100px;
+  max-width: 600px;
+  text-align: center;
+}
+div.text > p{
+  padding: 20px;
+  font-size: 25pt;
+}
